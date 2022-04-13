@@ -25,12 +25,12 @@ public class MergeSortedArray {
             }
             else
             {
-                if(nIndex>n)
+                if(nIndex>=n)
                 {
                     result[i] = nums1[mIndex];
                     mIndex++;
                 }
-                else
+                else if(mIndex>=m)
                 {
                     result[i] = nums2[nIndex];
                     nIndex++;
